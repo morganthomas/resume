@@ -4,7 +4,7 @@ let deps = [ (texlive.combine { inherit (texlive) scheme-basic hyperref geometry
 in
   stdenv.mkDerivation {
     name = "resume";
-    src = ./.;
+    src = ./src;
     buildInputs = deps;
     buildPhase = ''
       mkdir -p $out
