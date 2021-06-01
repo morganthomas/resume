@@ -9,7 +9,7 @@ in
     buildPhase = ''
       mkdir -p $out
       HOME=./. pdflatex resume.tex
-      cp resume.pdf $out
+      cp resume.pdf "$out/Morgan Thomas Resume.pdf"
     '';
     installPhase = ''
       echo done
